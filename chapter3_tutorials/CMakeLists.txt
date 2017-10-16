@@ -54,9 +54,9 @@ target_link_libraries(example2 ${catkin_LIBRARIES})
 add_executable(example3 src/example3.cpp)
 target_link_libraries(example3 ${catkin_LIBRARIES})
 
-add_executable(example4 src/example4.cpp)
-add_dependencies(example4 ${PROJECT_NAME}_generate_messages_cpp)
-target_link_libraries(example4 ${catkin_LIBRARIES})
+add_executable(example41 src/example4.cpp)
+add_dependencies(example41 ${PROJECT_NAME}_generate_messages_cpp)
+target_link_libraries(example41 ${catkin_LIBRARIES})
 
 add_executable(example5 src/example5.cpp)
 add_dependencies(example5 ${PROJECT_NAME}_generate_messages_cpp)
@@ -79,7 +79,7 @@ add_executable(example10 src/example10.cpp)
 target_link_libraries(example10 ${catkin_LIBRARIES})
 
 install(TARGETS
-    example1 example2 example3 example4 example5 example6 example7 example8
+    example1 example2 example3 example41 example5 example6 example7 example8
     example9 example10
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
